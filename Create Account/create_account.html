@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+</head>
+<body>
+
+    <form>
+        <p><b>How do you know about this website</b></p>
+        <textarea 
+        name ="comments" 
+        cols="20" 
+        rows="4">Enter your comments...
+    </textarea>
+    
+    <form>
+        <p><b>Select Your Favorite Lenguage</b>
+        <br/>
+
+        <input type="radio"
+        name="lenguage"
+        value="noone" checked="checked"/> No One
+
+        <input type="radio"
+        name="lenguage"
+        value="html"/> HTML
+
+        <input type="radio"
+        name="lenguage"
+        value="css"/> CSS
+        
+        </p>
+
+    </form>
+
+    <form><p><b>Select Lenguages You Know</b></p>
+        <input type="checkbox"
+        name ="lenguages"
+        value="HTML"> HTML
+
+        <input type="checkbox"
+        name ="lenguages"
+        value="CSS"> CSS
+
+        <input type="checkbox"
+        name ="lenguages"
+        value="JS"> JS
+
+        <input type="checkbox"
+        name ="lenguages"
+        value="PYTHON"> PYTHON
+    </form>
+
+    <form><p><b>Select Muscle:</b></p>
+        <select name="muscles" id="muscles">
+            <option value="empty" selected>Select...</option>
+            <option value="peck">Peck</option>
+            <option value="back">Back</option>
+
+
+        </select>
+
+
+    </form>
+
+    <!-- <form action="http://www.example.com/profile.php">
+        <select name="instruments" size="3" 
+       multiple="multiple">
+        <option value="guitar" selected="selected">
+        Guitar</option>
+        <option value="drums">Drums</option>
+        <option value="keyboard" 
+       selected="selected">Keyboard</option>
+        <option value="bass">Bass</option>
+        </select> -->
+
+        <form action="http://www.example.com/upload.php"
+        method="post">
+        <p>Upload your photho in JPG format:</p>
+        <input type="file" name="user-photho"/><br/>
+        <input type="submit" value="Upload" />
+        </form>
+
+        <form action="http://www.example.com/subscribe.php">
+            <p>Subscribe to our email list:</p>
+            <input type="text" name="email" />
+            <input type="submit" name="subscribe" value="Subscribe" />
+            </form>
+
+            <form action="http://www.example.org/subscribe.php">
+                <p>Subscribe to our email list:</p> 
+                 <input type="text" name="email" />
+                 <input type="image" src="images/subscribe.jpg" 
+               width="100" height="20" />
+                </form>
+
+                <form action="http://www.example.com/add.php"> <p>Button</p>
+                    <button><img src="images/add.gif" alt="add" 
+                    width="10" height="10" /> Add</button>
+                     <input type="hidden" name="bookmark" value="lyrics" />
+                     </form>
+
+        <!-- EACH FORM CONTROL SHOULD HAVE ITS OWN <LABEL> -->
+            <P><b>Using Label</b></P>
+            <label>Age: <input type="text" name="age" /></label>
+            <br/ >
+            Gender:
+            <input id="female" type="radio" name="gender"
+            value="f">
+            <label for="female">Female</label>
+            <input id="male" type="radio" name="gender" 
+           value="m">
+            <label for="male">Male</label>
+
+            <p><b>Grouping Elements</b></p>
+            <fieldset>
+                <legend>Create Account</legend>
+                <label>Name:<br />
+                <input type="text" name="first_name" /></label> <br/>
+
+                <label>Age:<br />
+                <input type="text" name="age" /></label> <br/>
+
+                <label>Email:<br />
+                <input type="text" name="email" /></label><br />
+                
+                <label>Mobile:<br />
+                <input type="text" name="mobile" /></label><br />
+
+                
+                
+            </fieldset>
+            <p><b>Date</b></p>
+            <form action="http://www.example.com/bookings/" 
+method="post">
+ <label for="username">Birth day:</label>
+ <input type="date" name="depart" />
+ <input type="submit" value="Submit" />
+ </form>
+ <p><b>Email</b></p>
+ <form action="http://www.example.org/subscribe.php"> 
+    <p>Please enter your email address:</p>
+     <input type="email" name="email" />
+     <input type="submit" value="Submit" required="required"/>
+     </form>
+</body>
+</html>
